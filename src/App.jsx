@@ -8,6 +8,7 @@ export default function App() {
       <ResetCSS/>
       <BrowserRouter>
         <Routes>
+          <Route path='/' element={<><h1>OK</h1></>}/>
           <Route path='/docentes' element={<DocentesPage/>}/>
           <Route path='/discentes' element={<DiscentesPage/>}/>
         </Routes>
