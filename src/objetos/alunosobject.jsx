@@ -1,7 +1,6 @@
 const IniciacaoCientifica = [
     {
-        Foto:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
         "Nome completo": "Hı́terson de Oliveira Silva",
         Assunto: "Algebra Geometrica em EM",
         "(co)orientador": "Sébastien Rondineau",
@@ -320,7 +319,7 @@ const Mestrado = [
         Email: "tessio.perotti@gmail.com"
     },
     {
-        Foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K2822833U5",
         "Nome completo": "Felipe Rodrigues Sobrinho",
         Assunto: "Sistema de comunicações satélitais",
         "(co)orientador": "Sébastien Rondineau",
@@ -342,7 +341,7 @@ const Mestrado = [
         Email: "leoni.silvestre@gmail.com"
     },
     {
-        Foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K8646122D6",
         "Nome completo": "Luso de Jesus Torres",
         Assunto: "Computação quântica em EM",
         "(co)orientador": "Sébastien Rondineau",
@@ -364,7 +363,7 @@ const Mestrado = [
         Email: ""
     },
     {
-        Foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K2406779P3",
         "Nome completo": "Gabriel Borges Pinheiro",
         Assunto: "Sistema de comunicações satélitais",
         "(co)orientador": "Daniel Costa Araújo",
@@ -832,7 +831,7 @@ const Doutorado = [
         Email: "eng.eduardo.gs@gmail.com"
     },
     {
-        Foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4450997J2",
         "Nome completo": "Rafael Rodrigues Luz Benevides",
         Assunto: "Processamento do sinal EM",
         "(co)orientador": "Sébastien Rondineau",
@@ -843,7 +842,7 @@ const Doutorado = [
         Email: "rafaeluz821@gmail.com"
     },
     {
-        Foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4734066U9",
         "Nome completo": "Amauri Gutierrez Martins Britto",
         Assunto: "Modelagem linha alta tensão",
         "(co)orientador": "Sébastien Rondineau (co)",
@@ -857,7 +856,7 @@ const Doutorado = [
 
 const PosDoutorado = [
     {
-        Foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4269480Y6",
         "Nome completo": "Juliana de Novais Schianti",
         Assunto: "Sistemas microfluídicos",
         "(co)orientador": "Sébastien Rondineau",

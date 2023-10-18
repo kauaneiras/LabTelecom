@@ -49,7 +49,8 @@ const Container = styled.div`
 const ProfilePic = styled.img`
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    object-fit: cover;
+    border-radius: 5%;
     border: 3px solid #023B7A;
     margin: 30px;
 `
