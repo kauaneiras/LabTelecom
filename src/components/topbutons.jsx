@@ -34,7 +34,7 @@ const Button = styled.button`
   cursor: pointer;
   margin-right: 5px;
   font-size: 20px;
-  background-color: ${props => (props.active ? "#458107" : "transparent")};
+  background-color: ${props => (props.active ? "#004080" : "transparent")};
   color: ${props => (props.active ? "white" : "initial")};
   font-weight: ${props => (props.active ? "bold" : "initial")};
   border: 1px solid #dddddd;
