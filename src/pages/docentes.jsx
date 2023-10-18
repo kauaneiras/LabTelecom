@@ -7,7 +7,7 @@ export default function DocentesPage() {
 
     const buttonToURL = {
         "Daniel Costa Araújo": "http://pesquisar.unb.br/professor/daniel-costa-araujo",
-        "Sébastien Roland Marie Joseph Rondineau": "https://fga.unb.br/sebastien.rondineau/curriculo-lattes"
+        "Sébastien Roland Marie Joseph Rondineau": "http://www.pesquisar.unb.br/professor/sebastien-roland-marie-joseph-rondineau"
     };
 
     const handleButtonClick = (button) => {
