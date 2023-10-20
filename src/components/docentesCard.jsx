@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function DocentesCard({ name, foto, email, telefone, endereçoProfissional, curriculo, resumo }) {
     return (
@@ -31,6 +30,11 @@ export default function DocentesCard({ name, foto, email, telefone, endereçoPro
                     {curriculo && curriculo.orcid && (
                         <a href={curriculo.orcid} target="_blank" rel="noopener noreferrer">
                             <ButtonToCurriculo>Orcid</ButtonToCurriculo>
+                        </a>
+                    )}
+                    {curriculo && curriculo.linkedIn && (
+                        <a href={curriculo.linkedIn} target="_blank" rel="noopener noreferrer">
+                            <ButtonToCurriculo>LinkedIn</ButtonToCurriculo>
                         </a>
                     )}
                 </ButtonsInRow>

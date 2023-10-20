@@ -6,7 +6,8 @@ const professoresObject = [
         Curriculo: {
             lattes: "http://lattes.cnpq.br/7293346445799114",
             orcid: "https://orcid.org/0000-0001-7894-3971",
-            pesquisarUnB: "http://pesquisar.unb.br/professor/daniel-costa-araujo"
+            pesquisarUnB: "http://www.pesquisar.unb.br/professor/sebastien-roland-marie-joseph-rondineau",
+            linkedIn: "https://www.linkedin.com/in/sebastienrondineau/"
         },
         Email: "sebastien@unb.br",
         Telefone: "(61) 983431144",
