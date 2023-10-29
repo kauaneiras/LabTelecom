@@ -1,48 +1,117 @@
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import DiscentesCard from "../components/discentesCard";
 import ToggleButtons from "../components/topbutons";
-import styled from "styled-components";
-import React, { useState, useEffect } from "react";
-import {Mestrado, TCC, Doutorado, PosDoutorado, IniciacaoCientifica,} from "../objetos/alunosobject.jsx";
+import {
+  Mestrado,
+  TCC,
+  Doutorado,
+  PosDoutorado,
+  IniciacaoCientifica,
+} from "../objetos/alunosobject.jsx";
 
 export default function DiscentesPage() {
-  const buttons = ["Todos", "Pós-Doutorado", "Doutorado", "Mestrado", "TCC", "Iniciação Científica"];
+  const buttons = [
+    "Todos",
+    "Pós-Doutorado",
+    "Doutorado",
+    "Mestrado",
+    "TCC",
+    "Iniciação Científica",
+  ];
   const [activeButton, setActiveButton] = useState(buttons[0]);
   const [selectedOption, setSelectedOption] = useState("nomeAZ");
   const [alunos, setAlunos] = useState([]);
+  const [searchInput, setSearchInput] = useState(''); // Add search input state
   const [filteredAlunos, setFilteredAlunos] = useState([]);
 
-  const options = [{ value: "nomeAZ", label: "Nome (A-Z)" },{ value: "maisAntigos", label: "Mais antigos" },{ value: "atual", label: "Atual" },{ value: "coorientador", label: "Coorientador" },];
+  const options = [
+    { value: "nomeAZ", label: "Nome (A-Z)" },
+    { value: "maisAntigos", label: "Mais antigos" },
+    { value: "atual", label: "Atual" },
+    { value: "coorientador", label: "Coorientador" },
+  ];
 
   useEffect(() => {
-    if (activeButton === "Todos") {setAlunos([...Mestrado, ...TCC, ...Doutorado, ...PosDoutorado, ...IniciacaoCientifica]);} 
-    else if (activeButton === "Mestrado") {setAlunos([...Mestrado]);} 
-    else if (activeButton === "TCC") {setAlunos([...TCC]);} 
-    else if (activeButton === "Doutorado") {setAlunos([...Doutorado]);} 
-    else if (activeButton === "Pós-Doutorado") {setAlunos([...PosDoutorado]);} 
-    else if (activeButton === "Iniciação Científica") {setAlunos([...IniciacaoCientifica]);}
+    if (activeButton === "Todos") {
+      setAlunos([
+        ...Mestrado,
+        ...TCC,
+        ...Doutorado,
+        ...PosDoutorado,
+        ...IniciacaoCientifica,
+      ]);
+    } else if (activeButton === "Mestrado") {
+      setAlunos([...Mestrado]);
+    } else if (activeButton === "TCC") {
+      setAlunos([...TCC]);
+    } else if (activeButton === "Doutorado") {
+      setAlunos([...Doutorado]);
+    } else if (activeButton === "Pós-Doutorado") {
+      setAlunos([...PosDoutorado]);
+    } else if (activeButton === "Iniciação Científica") {
+      setAlunos([...IniciacaoCientifica]);
+    }
   }, [activeButton]);
 
-  useEffect(() => {const sortedAlunos = ordenarAlunos(alunos, selectedOption); setFilteredAlunos(sortedAlunos);}, [alunos, selectedOption]);
+  useEffect(() => {
+    const sortedAlunos = ordenarAlunos(alunos, selectedOption);
+    setFilteredAlunos(sortedAlunos);
+  }, [alunos, selectedOption]);
 
   const ordenarAlunos = (alunos, opcao) => {
     const clonedAlunos = [...alunos];
-    if (opcao === "nomeAZ") {return clonedAlunos.sort((a, b) => a["Nome completo"].localeCompare(b["Nome completo"]));} 
-    else if (opcao === "maisAntigos") {return clonedAlunos.sort((a, b) => parseInt(a.Data) - parseInt(b.Data));} 
-    else if (opcao === "atual") {return clonedAlunos.sort((a, b) => {const parseData = (data) => (data === "em andamento" ? Infinity : parseInt(data)); const dataA = parseData(a.Data); const dataB = parseData(b.Data); return dataB - dataA;});} 
-    else if (opcao === "coorientador") {return clonedAlunos.sort((a, b) =>(a["(co)orientador"] || "").localeCompare(b["(co)orientador"] || ""));}
-    else {return clonedAlunos;}};
+    if (opcao === "nomeAZ") {
+      return clonedAlunos.sort((a, b) =>
+        a["Nome completo"].localeCompare(b["Nome completo"])
+      );
+    } else if (opcao === "maisAntigos") {
+      return clonedAlunos.sort((a, b) => parseInt(a.Data) - parseInt(b.Data));
+    } else if (opcao === "atual") {
+      return clonedAlunos.sort((a, b) => {
+        const parseData = (data) =>
+          data === "em andamento" ? Infinity : parseInt(data);
+        const dataA = parseData(a.Data);
+        const dataB = parseData(b.Data);
+        return dataB - dataA;
+      });
+    } else if (opcao === "coorientador") {
+      return clonedAlunos.sort((a, b) =>
+        (a["(co)orientador"] || "").localeCompare(b["(co)orientador"] || "")
+      );
+    } else {
+      return clonedAlunos;
+    }
+  };
+
+  // Function to filter students by name
+  const filterStudentsByName = () => {
+    return filteredAlunos.filter(aluno => {
+      return aluno["Nome completo"].toLowerCase().includes(searchInput.toLowerCase());
+    });
+  };
 
   return (
     <>
       <ToggleButtons buttons={buttons} setActiveButton={setActiveButton} activeButton={activeButton} />
-      <div style={{marginTop: '20px'}}>
+      <Container>
+      <SearchContainer>
+        <div>
         <Label>Ordenar por:</Label>
         <Select value={selectedOption} onChange={(e) => setSelectedOption(e.target.value)}>
           {options.map((option, index) => (<Option key={index} value={option.value}>{option.label}</Option>))}
         </Select>
-      </div>
-      <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
-        {filteredAlunos.map((aluno, index) => (
+        </div>
+        <SearchInput
+          type="text"
+          placeholder="Procurar por nome"
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
+        />
+      </SearchContainer>
+      </Container>
+      <StudentList>
+        {filterStudentsByName().map((aluno, index) => (
           <DiscentesCard
             key={index}
             name={aluno["Nome completo"]}
@@ -57,7 +126,7 @@ export default function DiscentesPage() {
             link={aluno.Link}
           />
         ))}
-      </div>
+      </StudentList>
     </>
   );
 }
@@ -70,10 +139,39 @@ const Label = styled.label`
 
 const Select = styled.select`
   padding: 5px;
-  margin-bottom: 20px;
   font-size: 1.2em;
 `;
 
 const Option = styled.option`
   font-size: 1em;
+`;
+
+const SearchContainer = styled.div`
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  
+`;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+`;
+
+const SearchInput = styled.input`
+  padding: 5px;
+  font-size: 1.2em;
+  width: 50%;
+`;
+
+const StudentList = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;

@@ -5,7 +5,7 @@ export default function DiscentesCard({name,photo, contato, curso, pgg, emprego,
     return (
         <>
             <Container onClick={()=> openLink()} linkprops={link}>
-                <ProfilePic src={photo}/>
+                <ProfilePic src={photo ? photo : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg'}/>
                 <InfosContainer>
                     <PessoalName>{name}</PessoalName>
                     <hr style={{ width: "100%"}}/>
@@ -38,6 +38,7 @@ const Container = styled.div`
     height: 100%;
     cursor: ${props => props.linkprops ? "pointer" : "default"};
     margin-bottom: 0.5%;
+    background-color: transparent;
     
     &:hover {
         border: ${props => props.linkprops ? "4px solid rgba(2, 59, 122, 1)" : "4px solid rgba(0, 0, 0, 0.2)"};

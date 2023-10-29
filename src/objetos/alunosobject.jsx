@@ -176,7 +176,7 @@ const Mestrado = [
         Email: "nasser.yousef.unb@gmail.com"
     },
     {
-        Foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto: "https://media.licdn.com/dms/image/C5103AQEjYM6nNiGI4Q/profile-displayphoto-shrink_800_800/0/1517048655400?e=2147483647&v=beta&t=e7Rs9XMBpWVZep9FMdaXfifC7juSqbg86bEhAaoCGc0",
         "Nome completo": "Jeann Feitosa Figueiredo",
         Assunto: "Beam forming em banda Ku",
         "(co)orientador": "Sébastien Rondineau",
@@ -187,7 +187,7 @@ const Mestrado = [
         Email: "jeann.feitosa@gmail.com"
     },
     {
-        Foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZa3dCF4afMOh9pplUzQajKpyEX6f7xlkuRCh5jEXeYnil4bN1b8MrEVFJI_HmwJ133_c&usqp=CAU",
         "Nome completo": "Elpidio Cândido de Araújo Bisneto",
         Assunto: "Comunicação com sensores sem bateria",
         "(co)orientador": "Sébastien Rondineau (co)",
@@ -264,7 +264,7 @@ const Mestrado = [
         Email: "lisboanascimento@gmail.com"
     },
     {
-        Foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThCccdNpR_dG7wHupezbEsK0VrTjY6M-VCc-29p4TNqyro-C9YWwJ4uKyZaaDef8oHq1E&usqp=CAU",
         "Nome completo": "Daniel Carvalho de Sousa",
         Assunto: "Reflectarry ativo banda Ku",
         "(co)orientador": "Sébastien Rondineau",
@@ -308,7 +308,7 @@ const Mestrado = [
         Email: "helton.2012.alves@gmail.com"
     },
     {
-        Foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg",
+        Foto: "https://media.licdn.com/dms/image/D4D03AQErNILPAfv-rA/profile-displayphoto-shrink_800_800/0/1671756328699?e=2147483647&v=beta&t=VS67denxv6OSa3CXY_EOaFNMv_9vgB31cxAX01TTYZw",
         "Nome completo": "Téssio Perotti Arruda",
         Assunto: "Sistema de comunicações satélitais",
         "(co)orientador": "Sébastien Rondineau",

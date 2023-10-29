@@ -8,6 +8,8 @@ export default function InitialPage() {
       <Link to="/discentes">Discente</Link>
       <br></br>
       <Link to="/docentes">Docente</Link>
+      <br></br>
+      <Link to="/parceiros">Parceiros</Link>
     </div>
   );
 };
