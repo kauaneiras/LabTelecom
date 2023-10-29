@@ -97,8 +97,7 @@ const SearchInput = styled.input`
 const PartnerListContainer = styled.div`
   width: 80%;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
