@@ -1,11 +1,11 @@
+// parcerosindustriais
 import autotrac from '../assets/logos/autotrac.png'
-import capes from '../assets/logos/capes.jpeg'
 import clamper from '../assets/logos/clamper.jpg'
-import CNPq from '../assets/logos/CNPq.png'
-import fapdf from '../assets/logos/fapdf.gif'
 import huawei from '../assets/logos/huawai.png'
 import omnisys from '../assets/logos/omnisys.png'
 import tecsys from '../assets/logos/tecsys.png'
+
+// parceirosacademicos
 import visiona from '../assets/logos/visiona.jpg'
 import IETR from '../assets/logos/IETR.png'
 import cassino from '../assets/logos/cassino.jpg'
@@ -18,8 +18,18 @@ import Magala from '../assets/logos/maga.jpg'
 import ukraine from '../assets/logos/ukraine.png'
 import censipam from '../assets/logos/censipam.jpg'
 import ensicaen from '../assets/logos/ensicaen.jpg'
+import poliusp from '../assets/logos/poliusp.png'
+import usp from '../assets/logos/usp.png'
+import unicamp from '../assets/logos/unicamp.png'
 
-const ParceirosCorporativos = [
+// agenciasdefomento
+import capes from '../assets/logos/capes.jpeg'
+import CNPq from '../assets/logos/CNPq.png'
+import fapdf from '../assets/logos/fapdf.gif'
+import fundep from '../assets/logos/fundep.png'
+
+
+const parcerosindustriais = [
     {
       id: 1,
       nome: "Autotrac",
@@ -62,30 +72,9 @@ const ParceirosCorporativos = [
       logo: visiona,
       link: "https://visionaespacial.com/"
     },
-    {
-      id: 7,
-      nome: "FAPDF",
-      descricao: "Fundação de Apoio à Pesquisa do Distrito Federal",
-      logo: fapdf,
-      link: "https://www.fap.df.gov.br/"
-    },
-    {
-      id: 8,
-      nome: "CNPq",
-      descricao: "Conselho Nacional de Desenvolvimento Científico e Tecnológico",
-      logo: CNPq,
-      link: "https://www.cnpq.br/"
-    },
-    {
-      id: 9,
-      nome: "CAPES",
-      descricao: "Coordenação de Aperfeiçoamento de Pessoal de Nível Superior",
-      logo: capes,
-      link: "https://www.capes.gov.br/"
-    }
   ];
 
-const UniversidadesParceiras = [
+const parceirosacademicos = [
     { 
         id: 10,
         nome: "Institut d’Electronique et Télécommunications de Rennes IETR – Université de Rennes 1, França",
@@ -162,7 +151,59 @@ const UniversidadesParceiras = [
       descricao: "",
       logo: censipam,
       link: "https://www.censipam.gov.br/"
+    },
+    {
+      id: 21,
+      nome: "Poli USP",
+      descricao: "Escola Politécnica da Universidade de São Paulo",
+      logo: poliusp,
+      link: "https://www.poli.usp.br/"
+    },
+    {
+      id: 22,
+      nome: "USP São Carlos",
+      descricao: "Universidade de São Paulo - São Carlos",
+      logo: usp,
+      link: "http://www.saocarlos.usp.br/"
+    },
+    {
+      id: 23,
+      nome: "Unicamp",
+      descricao: "Universidade Estadual de Campinas",
+      logo: unicamp,
+      link: "https://www.unicamp.br/"
     }
-]
+];
 
-  export { ParceirosCorporativos, UniversidadesParceiras }
+const agenciasdefomento = [
+    {
+      id: 7,
+      nome: "FAPDF",
+      descricao: "Fundação de Apoio à Pesquisa do Distrito Federal",
+      logo: fapdf,
+      link: "https://www.fap.df.gov.br/"
+    },
+    {
+      id: 8,
+      nome: "CNPq",
+      descricao: "Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+      logo: CNPq,
+      link: "https://www.cnpq.br/"
+    },
+    {
+      id: 9,
+      nome: "CAPES",
+      descricao: "Coordenação de Aperfeiçoamento de Pessoal de Nível Superior",
+      logo: capes,
+      link: "https://www.capes.gov.br/"
+    },
+    {
+      id: 30,
+      nome: "Fundep",
+      descricao: "Fundação de Apoio da UFMG",
+      logo: fundep,
+      link: "https://www.fundep.ufmg.br/"
+    }
+  ];
+
+  export { parcerosindustriais, parceirosacademicos, agenciasdefomento }
