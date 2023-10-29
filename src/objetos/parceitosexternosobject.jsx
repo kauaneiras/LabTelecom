@@ -21,6 +21,7 @@ import ensicaen from '../assets/logos/ensicaen.jpg'
 import poliusp from '../assets/logos/poliusp.png'
 import usp from '../assets/logos/usp.png'
 import unicamp from '../assets/logos/unicamp.png'
+import utfpr from '../assets/logos/utfpr.png'
 
 // agenciasdefomento
 import capes from '../assets/logos/capes.jpeg'
@@ -172,6 +173,13 @@ const parceirosacademicos = [
       descricao: "Universidade Estadual de Campinas",
       logo: unicamp,
       link: "https://www.unicamp.br/"
+    }, 
+    {
+      id: 24,
+      nome: "UTFPR",
+      descricao: "Universidade Tecnológica Federal do Paraná",
+      logo: utfpr,
+      link: "https://portal.utfpr.edu.br/"
     }
 ];
 
