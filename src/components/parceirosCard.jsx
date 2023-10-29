@@ -23,7 +23,7 @@ const CardContainer = styled.div`
   align-items: center;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  width: 90%;
+  width: 95%;
   height: auto;
   cursor: pointer;
   margin: 10px;
