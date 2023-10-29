@@ -16,6 +16,8 @@ import Sapienza from '../assets/logos/Sapienza.webp'
 import nottingham from '../assets/logos/nottingham.jpg'
 import Magala from '../assets/logos/maga.jpg'
 import ukraine from '../assets/logos/ukraine.png'
+import censipam from '../assets/logos/censipam.jpg'
+import ensicaen from '../assets/logos/ensicaen.jpg'
 
 const ParceirosCorporativos = [
     {
@@ -146,6 +148,20 @@ const UniversidadesParceiras = [
         descricao: "Antenas para comunicações satélitais",
         logo: boulder,
         link: "https://www.colorado.edu/"
+    },
+    {
+      id: 19,
+      nome: "ENSICAEN École Nationale Supérieure d’Ingénieurs de Caen, França",
+      descricao: "",
+      logo: ensicaen,
+      link: "https://www.ensicaen.fr/"
+    },
+    {
+      id: 20,
+      nome: "Centro Gestor e Operacional do Sistema de Proteção da Amazônia - CENSIPAM",
+      descricao: "",
+      logo: censipam,
+      link: "https://www.censipam.gov.br/"
     }
 ]
 
