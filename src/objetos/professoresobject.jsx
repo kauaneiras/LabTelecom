@@ -19,7 +19,9 @@ const professoresObject = [
         Resumo: "Possui graduação em Engenharia de Telecomunicações pela Universidade de Fortaleza (2010), mestrado e doutorado em Engenharia de Teleinformática obtidos na Universiade Federal do Ceará em 2012 e 2016, respectivamente. Foi membro do Grupo de Pesquisa em Telecomunicações Sem Fio (GTEL), atuando na área de na Processamento de Sinais para Comunicações Sem Fio. Em 2013, foi pesquisador visitante na Ericsson Research Labs, Estocolmo, Suécia. Em 2015, participou de estágio doutoral por um período de 1 ano na mesma Ericsson, onde ficou envolvido em atividades de pesquisa relacionadas ao 5G da empresa em parceria com o grupo de pesquisa GTEL. Atualmente é membro do grupo de pesquisa Processamento de Sinais para Análise de Dados e Aprendizado de Sistemas (SIPRAL) e, desde 2019, é professor da Universidade de Brasília, onde atua nas áreas de processamento de arranjo, estimação de canal para sistemas de comunicação MIMO massivo e processamento estatístico de sinais.",
         Curriculo: {
             lattes: "http://lattes.cnpq.br/4333596254925501",
+            orcid: "https://orcid.org/0000-0002-9107-1300",
             pesquisarUnB: "http://pesquisar.unb.br/professor/daniel-costa-araujo",
+
         },
         Email: "daniel.araujo@unb.br",
         Telefone: "(61) 3107-8904"
