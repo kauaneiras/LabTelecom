@@ -147,13 +147,6 @@ const parceirosacademicos = [
       link: "https://www.ensicaen.fr/"
     },
     {
-      id: 20,
-      nome: "Centro Gestor e Operacional do Sistema de Proteção da Amazônia - CENSIPAM",
-      descricao: "",
-      logo: censipam,
-      link: "https://www.censipam.gov.br/"
-    },
-    {
       id: 21,
       nome: "Poli USP",
       descricao: "Escola Politécnica da Universidade de São Paulo",
@@ -214,4 +207,14 @@ const agenciasdefomento = [
     }
   ];
 
-  export { parcerosindustriais, parceirosacademicos, agenciasdefomento }
+  const parceirosgovernamentais = [
+    {
+      id: 20,
+      nome: "Centro Gestor e Operacional do Sistema de Proteção da Amazônia - CENSIPAM",
+      descricao: "",
+      logo: censipam,
+      link: "https://www.censipam.gov.br/"
+    },
+  ];
+
+  export { parcerosindustriais, parceirosacademicos, agenciasdefomento,parceirosgovernamentais }

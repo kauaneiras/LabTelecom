@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ToggleButtons from "../components/topbutons";
 import ParceirosCard from "../components/parceirosCard";
-import { parcerosindustriais, parceirosacademicos, agenciasdefomento } from "../objetos/parceitosexternosobject";
+import { parcerosindustriais, parceirosacademicos, agenciasdefomento, parceirosgovernamentais } from "../objetos/parceitosexternosobject";
 import styled from "styled-components";
 
 export default function ParceirosPage() {
-    const buttons = ["Todos", "Parceiros Industriais", "Parceiros Acadêmicos", "Agências de Fomento"]; // Add "Todos" and "Universidades"
+    const buttons = ["Todos", "Parceiros Industriais", "Parceiros Acadêmicos", "Agências de Fomento", "Parceiros Governamentais"]; // Add "Todos" and "Universidades"
     const [activeButton, setActiveButton] = useState(buttons[0]);
     const [searchInput, setSearchInput] = useState("");
     const [filteredParceiros, setFilteredParceiros] = useState([]);
@@ -16,13 +16,15 @@ export default function ParceirosPage() {
 
     const filterPartners = () => {
         if (activeButton === "Todos") {
-            return sortAlphabetically([...parcerosindustriais, ...parceirosacademicos, ...agenciasdefomento]);
+            return sortAlphabetically([...parcerosindustriais, ...parceirosacademicos, ...agenciasdefomento, ...parceirosgovernamentais]);
         } else if (activeButton === "Parceiros Industriais") {
             return sortAlphabetically([...parcerosindustriais]);
         } else if (activeButton === "Parceiros Acadêmicos") {
             return sortAlphabetically([...parceirosacademicos]);
         } else if (activeButton === "Agências de Fomento") {
             return sortAlphabetically([...agenciasdefomento]);
+        }else if (activeButton === "Parceiros Governamentais") {
+            return sortAlphabetically([...parceirosgovernamentais]);
         }
     };
 
